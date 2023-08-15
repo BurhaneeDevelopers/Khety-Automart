@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* LOGO  */}
         <Link
           href="/"
-          class="border-e flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8 overflow-hidden"
+          class="md:border-e flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8 overflow-hidden"
         >
           <img class="w-44 h-20 lg:w-52 lg:h-28 mt-5" src="/logo.png" alt="" />
         </Link>
@@ -82,14 +82,16 @@ const Navbar = () => {
                 </div>
               </ul>
             </div>
-            <li class=" hover:text-[#f8ac23] hover-underline-animation">
-              <a href="">Services</a>
+            <li class=" hover:text-[#f8ac23] hover-underline-animation relative">
+              <a href="">New</a>
+              <div className="bg-red-500 w-2 h-2 rounded-full absolute top-0 -right-3"></div>
             </li>
             <li class=" hover:text-[#f8ac23] hover-underline-animation">
               <a href="">Contact</a>
             </li>
           </ul>
         </nav>
+
         {/* RESPONSIVE NAV  */}
         <div className="w-full flex md:hidden justify-center items-center z-10">
           <div className="drawer lg:drawer-open ">
@@ -99,20 +101,23 @@ const Navbar = () => {
 
               {/* Sidebar content here */}
               <ul className="menu p-4 w-80 h-full text-base-content bg-white">
-                <a href="" class="border-e flex-shrink-0 flex overflow-hidden">
+                <a
+                  href=""
+                  class="md:border-e flex-shrink-0 flex overflow-hidden mb-5"
+                >
                   <img
                     class="w-44 h-20 lg:w-52 lg:h-28 mt-5"
                     src="/logo.png"
                     alt=""
                   />
                 </a>
-                <li class="active hover:text-[#f8ac23] text-lg">
+                <li class="active hover:text-[#f8ac23] text-xl leading-loose">
                   <a href="">Home</a>
                 </li>
-                <li class="hover:text-[#f8ac23] text-lg">
+                <li class="hover:text-[#f8ac23] text-xl leading-loose">
                   <a href="">About</a>
                 </li>
-                <li class="hover:text-[#f8ac23] text-lg ">
+                <li class="hover:text-[#f8ac23] text-xl leading-loose ">
                   <a href="">
                     Products{" "}
                     <span>
@@ -120,30 +125,12 @@ const Navbar = () => {
                     </span>
                   </a>
                 </li>
-                <li class="hover:text-[#f8ac23] text-lg">
+                <li class="hover:text-[#f8ac23] text-xl leading-loose">
                   <a href="">Services</a>
                 </li>
-                <li class="hover:text-[#f8ac23] text-lg">
+                <li class="hover:text-[#f8ac23] text-xl leading-loose">
                   <a href="">Contact</a>
                 </li>
-
-                <div className="space-x-5 mt-5 px-5 flex items-center justify-start">
-                  <a
-                    class="group relative text-sm font-medium text-gray-700 focus:outline-none active:text-[#f8ac23] inline-block w-32"
-                    href="/download"
-                  >
-                    <span class="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-gray-700 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"></span>
-                    <span class="relative block border border-current bg-white px-8 py-3">
-                      Download
-                    </span>
-                  </a>
-                  <button
-                    class=""
-                    onClick={() => window.my_modal_2.showModal()}
-                  >
-                    <SearchNormal1 size="32" color="#f8ac23" />
-                  </button>
-                </div>
               </ul>
             </div>
           </div>
@@ -188,17 +175,17 @@ const Navbar = () => {
         </nav>
 
         {/* CTA NAV */}
-        <div class="border-s flex justify-around items-center px-4 w-1/2 lg:w-1/3 gap-5">
+        <div class="md:border-s flex justify-around items-center px-4 w-1/2 lg:w-1/3 gap-5">
           <button class="" onClick={() => window.my_modal_2.showModal()}>
             <SearchNormal1 size="32" color="#f8ac23" />
           </button>
           <a
-            class="group relative text-sm font-medium text-gray-700 focus:outline-none active:text-[#f8ac23] inline-block"
+            class="group relative text-sm font-medium text-gray-700 focus:outline-none active:text-[#f8ac23] hidden sm:inline-block"
             href="/download"
           >
             <span class="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-gray-700 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"></span>
             <span class="relative block border border-current bg-white px-8 py-3">
-              Download
+              Book Now
             </span>
           </a>
           <label htmlFor="my-drawer-2" className="md:hidden">
