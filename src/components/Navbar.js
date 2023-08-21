@@ -84,7 +84,10 @@ const Navbar = () => {
             </div>
             <li class=" hover:text-[#f8ac23] hover-underline-animation relative">
               <a href="">New</a>
-              <div className="bg-red-500 w-2 h-2 rounded-full absolute top-0 -right-3"></div>
+              <div className="flex">
+                <span className="bg-red-500 w-2 h-2 rounded-full opacity-75 animate-ping absolute top-0 -right-3"></span>
+                <span class="absolute flex h-2 w-2 top-0 -right-3 rounded-full bg-red-500"></span>
+              </div>
             </li>
             <li class=" hover:text-[#f8ac23] hover-underline-animation">
               <a href="">Contact</a>
