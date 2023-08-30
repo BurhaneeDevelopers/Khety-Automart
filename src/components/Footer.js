@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div>
       <footer class="bg-white">
-        <div class="mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col items-center gap-4 rounded-lg bg-[#f8ac23] p-6 shadow-lg sm:flex-row sm:justify-between">
             <strong class="text-xl text-white sm:text-xl">
               Make Your Next Career Move!
@@ -259,7 +259,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div class="mt-16 sm:flex sm:items-center sm:justify-between">
+            <div class="sm:flex sm:items-center sm:justify-between">
               <div class="flex justify-center text-teal-600 sm:justify-start">
                 <img
                   src="/logo.png"
@@ -268,7 +268,7 @@ const Footer = () => {
                 />
               </div>
 
-              <p class="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
+              <p class="text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
                 Copyright &copy; 2023. All rights reserved.
               </p>
             </div>

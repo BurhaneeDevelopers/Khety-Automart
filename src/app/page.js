@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
 import { ArrowRight2 } from "iconsax-react";
+import Heading from "@/components/Heading";
+
 export default function Home() {
   return (
-    <>
+    <div className="">
       <div className="flex justify-between h-screen">
         <div className="inset-0 absolute bg-gray-200 h-screen rounded-b-box -z-10"></div>
 
@@ -15,7 +17,6 @@ export default function Home() {
               <span className="text-[#f8ac23] mx-4">Part</span>
               At A Time
             </h2>
-        
           </div>
 
           <button class="group relative text-sm font-medium text-gray-700 focus:outline-none active:text-[#f8ac23] hidden sm:inline-block mx-3 my-5">
@@ -40,6 +41,18 @@ export default function Home() {
 
         {/* For Products https://www.instagram.com/p/Cvzx9Pqy1Bw/ */}
       </div>
-    </>
+      {/* Products section */}
+      <section className="bg-[#FABA02]/20 h-screen p-10">
+        <Heading  title="What we do" />
+        <div className="container 2xl mx-auto">
+        <div className="lg:flex justify-center align-center h-screen">
+          <div className="w-1/2 lg:flex justify-center align-center">Product Div
+          <div className="">product Items</div>
+          </div>
+          <div className="w-1/2">Image Div</div>
+        </div>
+        </div>
+      </section>
+    </div>
   );
 }
