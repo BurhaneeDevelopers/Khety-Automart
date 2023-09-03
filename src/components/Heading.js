@@ -6,8 +6,8 @@ const Heading = ({ title }) => {
   const highlightedWord = words[middleIndex];
   return (
     <div>
-      <div className="flex relative items-end">
-        <span className="hollow text-transparent font-extrabold text-8xl poppins uppercase tracking-[1.5rem] opacity-10">
+      <div className="flex relative items-end px-10">
+        <span className="hollow text-transparent font-extrabold text-8xl poppins uppercase tracking-[1.5rem] opacity-20">
           Khety Traders
         </span>
         <h1 className="absolute text-5xl tracking-widest uppercase font-extrabold text-[#575757]">
